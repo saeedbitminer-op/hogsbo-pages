@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Deletion / Radera konto / حذف حساب کاربری — Högsbo Teorifrågor</title>
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card-bg: #ffffff;
+    --text: #1c1e21;
+    --muted: #5a5f6a;
+    --accent: #2563eb;
+    --danger: #dc2626;
+    --border: #e4e6eb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 32px 28px;
+    margin-bottom: 28px;
+  }
+  .lang-switch {
+    display: flex; gap: 8px; justify-content: center;
+    margin-bottom: 28px; flex-wrap: wrap;
+  }
+  .lang-switch button {
+    border: 1px solid var(--border); background: #fff;
+    padding: 8px 18px; border-radius: 999px; cursor: pointer;
+    font-size: 14px; color: var(--text);
+  }
+  .lang-switch button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  h1 { font-size: 22px; margin-top: 0; }
+  h2 { font-size: 17px; margin-top: 26px; margin-bottom: 8px; color: var(--accent); }
+  p, li { color: var(--text); font-size: 15px; }
+  .muted { color: var(--muted); font-size: 13px; }
+  ul, ol { padding-left: 20px; margin: 8px 0; }
+  [dir="rtl"] ul, [dir="rtl"] ol { padding-left: 0; padding-right: 20px; }
+  a { color: var(--accent); }
+  .section { display: none; }
+  .section.active { display: block; }
+  .warn {
+    background: #fef2f2; border: 1px solid #fecaca; color: var(--danger);
+    padding: 14px 16px; border-radius: 10px; font-size: 14px; margin: 16px 0;
+  }
+  .btn {
+    display: inline-block; background: var(--danger); color: #fff !important;
+    padding: 12px 20px; border-radius: 10px; text-decoration: none;
+    font-weight: 600; margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="lang-switch">
+    <button class="active" onclick="showLang('sv', this)">Svenska</button>
+    <button onclick="showLang('en', this)">English</button>
+    <button onclick="showLang('fa', this)">فارسی</button>
+  </div>
+
+  <!-- SWEDISH -->
+  <div class="card section active" id="sv" dir="ltr" lang="sv">
+    <h1>Radera konto — Högsbo Teorifrågor</h1>
+    <p class="muted">Senast uppdaterad: 2026-09-13</p>
+
+    <p>Om du vill radera ditt konto och all tillhörande data i appen Högsbo Teorifrågor kan du göra det på två sätt:</p>
+
+    <h2>Alternativ 1: Radera direkt i appen (rekommenderas)</h2>
+    <ol>
+      <li>Öppna appen och logga in på ditt konto.</li>
+      <li>Öppna menyn (☰) uppe till vänster.</li>
+      <li>Välj <strong>"Radera konto"</strong> längst ner i menyn.</li>
+      <li>Bekräfta borttagningen.</li>
+    </ol>
+    <p>Ditt konto och all tillhörande data raderas omedelbart och permanent.</p>
+
+    <h2>Alternativ 2: Begär radering via e-post</h2>
+    <p>Om du inte har tillgång till appen kan du skicka en begäran om radering till:<br>
+    <a href="mailto:Info@hogsbotrafikskola.se">Info@hogsbotrafikskola.se</a></p>
+    <p>Ange den e-postadress som är kopplad till ditt konto. Vi behandlar din begäran inom 30 dagar.</p>
+
+    <h2>Vilken data raderas?</h2>
+    <ul>
+      <li>Kontoinformation (namn, e-post, telefonnummer)</li>
+      <li>Övningsresultat och framsteg</li>
+      <li>Köphistorik kopplad till ditt konto</li>
+    </ul>
+    <div class="warn">Denna åtgärd kan inte ångras. All din data tas bort permanent.</div>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="card section" id="en" dir="ltr" lang="en">
+    <h1>Delete Account — Högsbo Teorifrågor</h1>
+    <p class="muted">Last updated: 2026-09-13</p>
+
+    <p>If you want to delete your account and all associated data from the Högsbo Teorifrågor app, you can do so in two ways:</p>
+
+    <h2>Option 1: Delete directly in the app (recommended)</h2>
+    <ol>
+      <li>Open the app and sign in to your account.</li>
+      <li>Open the menu (☰) in the top left corner.</li>
+      <li>Select <strong>"Delete account"</strong> at the bottom of the menu.</li>
+      <li>Confirm the deletion.</li>
+    </ol>
+    <p>Your account and all associated data will be deleted immediately and permanently.</p>
+
+    <h2>Option 2: Request deletion via email</h2>
+    <p>If you don't have access to the app, you can send a deletion request to:<br>
+    <a href="mailto:Info@hogsbotrafikskola.se">Info@hogsbotrafikskola.se</a></p>
+    <p>Please include the email address associated with your account. We will process your request within 30 days.</p>
+
+    <h2>What data is deleted?</h2>
+    <ul>
+      <li>Account information (name, email, phone number)</li>
+      <li>Practice results and progress</li>
+      <li>Purchase history linked to your account</li>
+    </ul>
+    <div class="warn">This action cannot be undone. All your data will be permanently removed.</div>
+  </div>
+
+  <!-- PERSIAN -->
+  <div class="card section" id="fa" dir="rtl" lang="fa">
+    <h1>حذف حساب کاربری — Högsbo Teorifrågor</h1>
+    <p class="muted">آخرین به‌روزرسانی: ۱۳۹۵/۰۶/۲۲</p>
+
+    <p>اگر می‌خواهید حساب کاربری و تمام اطلاعات مرتبط با آن را در اپلیکیشن Högsbo Teorifrågor حذف کنید، می‌توانید از دو روش زیر استفاده کنید:</p>
+
+    <h2>روش ۱: حذف مستقیم از داخل اپلیکیشن (توصیه‌شده)</h2>
+    <ol>
+      <li>اپلیکیشن را باز کرده و وارد حساب کاربری خود شوید.</li>
+      <li>منوی کشویی (☰) بالا سمت چپ را باز کنید.</li>
+      <li>گزینه‌ی <strong>«حذف حساب کاربری»</strong> را در پایین منو انتخاب کنید.</li>
+      <li>حذف را تأیید کنید.</li>
+    </ol>
+    <p>حساب کاربری و تمام اطلاعات مرتبط با آن بلافاصله و به‌صورت دائمی حذف می‌شود.</p>
+
+    <h2>روش ۲: درخواست حذف از طریق ایمیل</h2>
+    <p>اگر به اپلیکیشن دسترسی ندارید، می‌توانید درخواست حذف خود را به این آدرس ارسال کنید:<br>
+    <a href="mailto:Info@hogsbotrafikskola.se">Info@hogsbotrafikskola.se</a></p>
+    <p>لطفاً ایمیل مرتبط با حساب کاربری‌تان را ذکر کنید. درخواست شما ظرف ۳۰ روز پردازش خواهد شد.</p>
+
+    <h2>چه اطلاعاتی حذف می‌شود؟</h2>
+    <ul>
+      <li>اطلاعات حساب کاربری (نام، ایمیل، شماره تلفن)</li>
+      <li>نتایج تمرین و پیشرفت</li>
+      <li>سابقه‌ی خرید مرتبط با حساب کاربری</li>
+    </ul>
+    <div class="warn">این عمل قابل بازگشت نیست. تمام اطلاعات شما برای همیشه حذف می‌شود.</div>
+  </div>
+
+</div>
+
+<script>
+  function showLang(lang, btn) {
+    document.querySelectorAll('.section').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    document.getElementById(lang).classList.add('active');
+    document.querySelectorAll('.lang-switch button').forEach(function(b) {
+      b.classList.remove('active');
+    });
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
